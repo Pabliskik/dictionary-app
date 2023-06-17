@@ -3,8 +3,13 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #85C1E9;
+    height: 100%;
 }
 
 .container-all {
@@ -13,8 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
-    min-width: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
@@ -22,19 +27,25 @@ body {
     font-family: 'Merriweather', serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30%;
+    width: 50vh;
     border-radius: 0.62rem;
     box-shadow: 0 1.25rem 1.8rem rgba(8, 21, 65, 0.25);
     border: 0.1px;
+    margin: 0 20px;
+}
+
+.container-title {
+    padding-top: 1.5vh;
+    font-size: xx-large;
 }
 
 .search-wrapper {
     display: flex;
     gap: 1.25rem;
     padding: 3vh;
+    padding-top: 1vh;
     padding-bottom: 1vh;
 }
 
@@ -45,10 +56,12 @@ body {
     padding: 0.7vh 2vh;
     border: none;
     border-radius: 14px;
+    box-shadow: 0 2px 2px 0 gray;
 }
 
 .search-wrapper input {
     font-size: 1.9vh;
+    width: 100%;
     padding: 0 0.4vh;
     border: none;
     border-bottom: 2px solid #85C1E9;
@@ -58,14 +71,13 @@ body {
 
 #result {
     width: 90%;
-    padding-bottom: 2vh;
+    padding: 2vh;
     text-align: justify;
 }
 
 #result h3 {
-    padding-bottom: 10px;
-    padding-top: 10px;
     text-align: center;
+    margin-bottom: 1vh;;
 }
 
 #result p {
